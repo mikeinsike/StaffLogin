@@ -1,0 +1,21 @@
+<h3>Staff Login</h3>
+<input id="text_a" type="text;" placeholder=Password required />
+<p id="answer"></p>
+<button onclick="myFunction()">Login</button>
+
+<script>
+function myFunction()
+{
+var a=document.getElementById("text_a").value;
+
+if (a=="ImStaff")
+  {
+document.getElementById("answer").innerHTML="Correct, Redirecting if not redirected go to https://staff.mikeinsike.com/";
+location.replace('https://staff.mikeinsike.com/');
+}
+else
+  {
+document.getElementById("answer").innerHTML="Incorrect!";
+  }
+}
+</script>
