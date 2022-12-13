@@ -4,24 +4,21 @@
 <button onclick="myFunction()">Login</button>
 
 <script>
-var correct = 0
 function myFunction()
 {
 var a=document.getElementById("text_a").value;
 
 if (a=="Staff2022")
   {
-document.getElementById("answer").innerHTML="Correct, Redirecting (Staff)";
-correct = 1
+document.getElementById("answer").innerHTML="Correct";
 location.replace('https://staff.mikeinsike.com/');
 }
- elseif (a=="VIP2023")
+ elseif (a=="VIP2008")
   {
-document.getElementById("answer").innerHTML="Correct, Redirecting (VIP)";
-correct = 1
+document.getElementById("answer").innerHTML="Correct, Redirecting";
 location.replace('https://www.mikeinsike.com/Shjw73bs-7ydnd8nsu274m-7473-84837');
 }
- elseif (correct=0)
+else
   {
 document.getElementById("answer").innerHTML="Incorrect!";
   }
