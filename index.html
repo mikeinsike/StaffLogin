@@ -11,17 +11,17 @@ var a=document.getElementById("text_a").value;
 
 if (a=="Staff2023")
   {
-document.getElementById("answer").innerHTML="Correct, Redirecting (Staff)";
-correct = 1
+document.getElementById("answer").innerHTML="Correct, Redirecting";
+var correct=0
 location.replace('https://staff.mikeinsike.com/');
 }
  elseif (a=="VIP2023")
   {
-document.getElementById("answer").innerHTML="Correct, Redirecting (VIP)";
+document.getElementById("answer").innerHTML="Correct, Redirecting";
 correct = 1
 location.replace('https://www.mikeinsike.com/Shjw73bs-7ydnd8nsu274m-7473-84837');
 }
- elseif (correct=0)
+ elseif (correct === 0)
   {
 document.getElementById("answer").innerHTML="Incorrect!";
   }
